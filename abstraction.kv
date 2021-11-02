@@ -1,0 +1,258 @@
+#:kivy 2.0.0
+<AbstractFloat>:
+    key_word_count: other_key_words
+    abstract_word_count: other_abstract_words
+    abstract_percent: other_abstract_percent
+
+    canvas.before:
+        Color:
+            rgba: 0, 1, 1, 0.3
+        Rectangle:
+            # self here refers to the widget i.e BoxLayout
+            pos: self.pos
+            size: self.size
+    Label:
+        text: "Drag and drop file to be processed anywhere in the app"
+        pos_hint: {'x': .0, 'y': .9}
+        size_hint: 1, .1
+        
+    Label:
+        text: "Key Words"
+        pos_hint: {'x': .0, 'y': .8}
+        size_hint: .34, .1
+    
+    Label:
+        text: "Abstract"
+        pos_hint: {'x': .5, 'y': .8}
+        size_hint: .33, .1
+        
+    Label:
+        text: "Key Word Count"
+        pos_hint: {'x': .0, 'y': .7}
+        size_hint: .34, .1
+
+    Label:
+        text: "2"
+        pos_hint: {'x': .0, 'y': .6}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .20, 'y': .6}
+        size_hint: .14, .1
+        on_release: root.set_key_words("2")
+    
+    Label:
+        text: "3"
+        pos_hint: {'x': .0, 'y': .5}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .20, 'y': .5}
+        size_hint: .14, .1
+        on_release: root.set_key_words("3")
+
+    Label:
+        text: "4"
+        pos_hint: {'x': .0, 'y': .4}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .20, 'y': .4}
+        size_hint: .14, .1
+        on_release: root.set_key_words("4")
+
+    Label:
+        text: "5"
+        pos_hint: {'x': .0, 'y': .3}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .20, 'y': .3}
+        size_hint: .14, .1
+        on_release: root.set_key_words("5")
+
+    Label:
+        text: "6"
+        pos_hint: {'x': .0, 'y': .2}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .20, 'y': .2}
+        size_hint: .14, .1
+        on_release: root.set_key_words("6")
+
+    Label:
+        text: "Other"
+        pos_hint: {'x': .0, 'y': .1}
+        size_hint: .20, .1
+
+    IntInput:
+        id: other_key_words
+        pos_hint: {'x': .20, 'y': .1}
+        size_hint: .14, .1
+        multiline: True
+
+    Label:
+        text: "Direct Abstract Word Count"
+        pos_hint: {'x': .34, 'y': .7}
+        size_hint: .33, .1
+
+    Label:
+        text: "By % of Document"
+        pos_hint: {'x': .67, 'y': .7}
+        size_hint: .33, .1
+
+    Label:
+        text: "100"
+        pos_hint: {'x': .34, 'y': .6}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .54, 'y': .6}
+        size_hint: .13, .1
+        on_release: root.set_abstract_words("100")
+    
+    Label:
+        text: "150"
+        pos_hint: {'x': .34, 'y': .5}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .54, 'y': .5}
+        size_hint: .13, .1
+        on_release: root.set_abstract_words("150")
+
+    Label:
+        text: "200"
+        pos_hint: {'x': .34, 'y': .4}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .54, 'y': .4}
+        size_hint: .13, .1
+        on_release: root.set_abstract_words("200")
+
+    Label:
+        text: "250"
+        pos_hint: {'x': .34, 'y': .3}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .54, 'y': .3}
+        size_hint: .13, .1
+        on_release: root.set_abstract_words("250")
+
+    Label:
+        text: "300"
+        pos_hint: {'x': .34, 'y': .2}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .54, 'y': .2}
+        size_hint: .13, .1
+        on_release: root.set_abstract_words("300")
+
+    Label:
+        text: "Other"
+        pos_hint: {'x': .34, 'y': .1}
+        size_hint: .20, .1
+
+    IntInput:
+        id: other_abstract_words
+        pos_hint: {'x': .54, 'y': .1}
+        size_hint: .13, .1
+        multiline: True
+
+    Label:
+        text: "2%"
+        pos_hint: {'x': .67, 'y': .6}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .87, 'y': .6}
+        size_hint: .13, .1
+        on_release: root.set_abstract_percent("2")
+    
+    Label:
+        text: "4%"
+        pos_hint: {'x': .67, 'y': .5}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .87, 'y': .5}
+        size_hint: .13, .1
+        on_release: root.set_abstract_percent("4")
+
+    Label:
+        text: "6%"
+        pos_hint: {'x': .67, 'y': .4}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .87, 'y': .4}
+        size_hint: .13, .1
+        on_release: root.set_abstract_percent("6")
+
+    Label:
+        text: "8%"
+        pos_hint: {'x': .67, 'y': .3}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .87, 'y': .3}
+        size_hint: .13, .1
+        on_release: root.set_abstract_percent("8")
+
+    Label:
+        text: "10%"
+        pos_hint: {'x': .67, 'y': .2}
+        size_hint: .20, .1
+
+    Button:
+        text: "Set"
+        pos_hint: {'x': .87, 'y': .2}
+        size_hint: .13, .1
+        on_release: root.set_abstract_percent("10")
+
+    Label:
+        text: "Other"
+        pos_hint: {'x': .67, 'y': .1}
+        size_hint: .20, .1
+
+    FloatInput:
+        id: other_abstract_percent
+        pos_hint: {'x': .87, 'y': .1}
+        size_hint: .13, .1
+        multiline: True
+
+    Button:
+        text: "Extract Key Words"
+        pos_hint: {'x': .0, 'y': .0}
+        size_hint: .34, .1
+        on_release: root.extract_key_words(root.key_word_count.text)
+    
+    Button:
+        text: "Extract Abstract by Count"
+        pos_hint: {'x': .34, 'y': .0}
+        size_hint: .33, .1
+        on_release: root.extract_abstract(root.abstract_word_count.text)
+
+    Button:
+        text: "Extract Abstract by Percentage"
+        pos_hint: {'x': .67, 'y': .0}
+        size_hint: .33, .1
+        on_release: root.extract_abstract(root.abstract_percent.text + "%")
