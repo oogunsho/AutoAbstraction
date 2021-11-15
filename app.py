@@ -13,7 +13,7 @@ from kivy.graphics import Color, Rectangle
 import os
 import platform
 
-# for keyword extraction
+# for keyword extraction    
 from rake_nltk import Metric, Rake
 from file_changer import FileChanger
 
